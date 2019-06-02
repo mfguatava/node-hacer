@@ -3,10 +3,9 @@ const argv = require('./config/yargs').argv;
 const porHacer = require('./por-hacer/por-hacer');
 
 //console.log(argv);
+console.log("--- MANEJO DE NOTAS V 1.0.1".rainbow);
 
 let comando = argv._[0];
-
-//console.log(argv);
 switch (comando) {
     case 'crear':
         let tarea = porHacer.crear(argv.descripcion);
